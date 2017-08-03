@@ -16,7 +16,6 @@
     "dev:server": "mkdir -p build && BABEL_ENV=server babel src --watch --out-dir build --source-maps",
     "dev:server:monitor": "DEBUG=\"artwork:*\" nodemon --inspect build/app.js",
     "dev:client": "webpack --watch",
-    "dev:client:cbd": "webpack-dev-server",
     "watch": "mkdir -p build && babel src --watch --out-dir build",
     "test": "jest",
     "type": "flow",
