@@ -25,7 +25,6 @@
     "static": "mkdir -p build/static && cp -r assets/static/* build/static"
   },
   "dependencies": {
-    "@storybook/cli": "^3.1.6",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "isomorphic-fetch": "^2.2.1",
