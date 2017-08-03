@@ -1,0 +1,9 @@
+// @flow
+
+declare type User = {
+  name: string;
+};
+
+declare type UserState = {
+  users: User[];
+};

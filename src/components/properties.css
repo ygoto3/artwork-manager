@@ -1,0 +1,114 @@
+:root {
+  /* size */
+  --space: 5px;
+  --radius: 2px;
+
+  /* color */
+  /* - color-light */
+  --color-lt-background: none;
+  --color-lt-background-hover: none;
+  --color-lt-background-active: none;
+  --color-lt-link: none;
+  --color-lt-link-visited: none;
+  --color-lt-link-hover: none;
+  --color-lt-link-active: none;
+  --color-lt-success: none;
+  --color-lt-danger: red;
+  --color-lt-warning: orange;
+  --color-lt-info: gray;
+  --color-lt-primary: blue;
+  --color-lt-secondary: green;
+  --color-lt-accent: none;
+  --color-lt-twitter: none;
+  --color-lt-facebook: none;
+
+  /* - color-dk */
+  --color-dk-background: none;
+  --color-dk-background-hover: none;
+  --color-dk-background-active: none;
+  --color-dk-link: none;
+  --color-dk-link-visited: none;
+  --color-dk-link-hover: none;
+  --color-dk-link-active: none;
+  --color-dk-success: none;
+  --color-dk-danger: none;
+  --color-dk-warning: none;
+  --color-dk-info: none;
+  --color-dk-primary: none;
+  --color-dk-secondary: none;
+  --color-dk-accent: none;
+  --color-dk-twitter: none;
+  --color-dk-facebook: none;
+
+  /* font-size */
+  --font-size-xxs: none;
+  --font-size-xs: none;
+  --font-size-s: none;
+  --font-size-m: none;
+  --font-size-l: none;
+  --font-size-xl: none;
+  --font-size-xxl: none;
+
+  /* button */
+
+  /* - button-color */
+
+  /* - - button-color-lt */
+  --button-color-lt-default: #aaa;
+  --button-color-lt-primary: var(--color-lt-primary);
+  --button-color-lt-secondary: var(--color-lt-secondary);
+  --button-color-lt-danger: var(--color-lt-danger);
+  --button-color-lt-info: var(--color-lt-info);
+
+  /* - - button-color-dk */
+  --button-color-dk-defaudk: none;
+  --button-color-dk-primary: var(--color-dk-primary);
+  --button-color-dk-secondary: var(--color-dk-secondary);
+  --button-color-dk-danger: var(--color-dk-danger);
+  --button-color-dk-info: var(--color-dk-info);
+
+  /* - button-size */
+
+  /* - - button-size-xxs */
+  --button-size-xxs-height: none;
+  --button-size-xxs-padding-v: none;
+  --button-size-xxs-padding-h: none;
+  --button-size-xxs-label: none;
+
+  /* - - button-size-xs */
+  --button-size-xs-height: none;
+  --button-size-xs-padding-v: none;
+  --button-size-xs-padding-h: none;
+  --button-size-xs-label: none;
+
+  /* - - button-size-s */
+  --button-size-s-height: none;
+  --button-size-s-padding-v: none;
+  --button-size-s-padding-h: none;
+  --button-size-s-label: none;
+
+  /* - - button-size-m */
+  --button-size-m-height: none;
+  --button-size-m-padding-v: none;
+  --button-size-m-padding-h: none;
+  --button-size-m-label: none;
+
+  /* - - button-size-l */
+  --button-size-l-height: none;
+  --button-size-l-padding-v: none;
+  --button-size-l-padding-h: none;
+  --button-size-l-label: none;
+
+  /* - - button-size-xl */
+  --button-size-xl-height: none;
+  --button-size-xl-padding-v: none;
+  --button-size-xl-padding-h: none;
+  --button-size-xl-label: none;
+
+  /* - - button-size-xxl */
+  --button-size-xxl-height: none;
+  --button-size-xxl-padding-v: none;
+  --button-size-xxl-padding-h: none;
+  --button-size-xxl-label: none;
+
+}

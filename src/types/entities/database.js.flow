@@ -1,0 +1,11 @@
+// @flow
+
+declare type MongoData = {
+  id: number;
+  _id: number;
+  __v: string;
+};
+
+declare type ResponseData = {
+  id: number;
+};

@@ -1,0 +1,17 @@
+// @flow
+
+declare interface Action {
+  type: string;
+}
+
+declare interface ReceiveArtworksAction extends Action {
+  items: Artwork[];
+}
+
+declare interface FetchArtworksAction extends Action {
+  items: Artwork[];
+}
+
+declare interface CreateArtworkAction extends Action {
+  artwork: Artwork;
+}

@@ -1,0 +1,28 @@
+@import "../../properties.css";
+
+.container {
+  display: inline-block;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+.label {
+  background-color: rgba(255,255,255,.8);
+  color: black;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100px;
+}
+
+.primary { background-color: var(--color-lt-primary); }
+.secondary { background-color: var(--color-lt-secondary); }
+.accent { background-color: var(--color-lt-accent); }
+.success { background-color: var(--color-lt-success); }
+.danger { background-color: var(--color-lt-danger); }
+.warning { background-color: var(--color-lt-warning); }
+.info { background-color: var(--color-lt-info); }
+.twitter { background-color: var(--color-lt-twitter); }
+.facebook { background-color: var(--color-lt-facebook); }

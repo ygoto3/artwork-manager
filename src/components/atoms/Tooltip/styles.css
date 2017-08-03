@@ -1,0 +1,24 @@
+@import "../../properties.css";
+
+.container {
+  position: relative;
+}
+
+.tooltip {
+  bottom: 0;
+  background-color: rgba(97,97,97,.9);
+  border-radius: var(--radius);
+  display: none;
+  left: 50%;
+  padding: calc(var(--space)) calc(var(--space) * 2);
+  position: absolute;
+  transform: translate(-50%, 100%);
+  visibility: hidden;
+}
+
+.container:hover .tooltip {
+  display: initial;
+  visibility: initial;
+}
+
+

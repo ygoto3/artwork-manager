@@ -1,0 +1,9 @@
+// @flow
+
+declare type Artwork = {
+  id: number;
+  title: string;
+  image: File,
+  imageSource: string;
+  description: string;
+};

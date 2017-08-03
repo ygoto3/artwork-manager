@@ -1,0 +1,17 @@
+# OS X files
+.DS_Store
+Thumbs.db
+
+# Generated files
+npm-debug.log
+node_modules/
+build/
+uploads/
+coverage/
+backstop_data/bitmaps_test
+backstop_data/html_report
+storybook-static/
+
+# Intellij project files
+.idea
+*.iml

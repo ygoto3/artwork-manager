@@ -1,0 +1,11 @@
+.container {
+  border-radius: 50%; 
+}
+
+.xxs { width: 10px; height: 10px; }
+.xs { width: 20px; height: 20px; }
+.s { width: 40px; height: 40px; }
+.m { width: 80px; height: 80px; }
+.l { width: 120px; height: 120px; }
+.xl { width: 160px; height: 160px; }
+.xxl { width: 200px; height: 200px; }

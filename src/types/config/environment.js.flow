@@ -1,0 +1,6 @@
+// @flow
+
+declare type Environment = {
+  DEFAULT_PORT: number;
+  MONGODB_URI: string;
+};

@@ -1,0 +1,6 @@
+@import '../../properties.css';
+
+.container {
+  background-color: yellow;
+  padding: var(--space);
+}

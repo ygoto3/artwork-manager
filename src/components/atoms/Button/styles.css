@@ -1,0 +1,35 @@
+@import "../../properties.css";
+
+.container {
+  background-color: var(--button-color-lt-default);
+  border: none;
+  border-radius: var(--radius);
+}
+
+.xxs { padding: 6px; }
+.xs { padding: 7px; }
+.s { padding: 8px; }
+.m { padding: 9px; }
+.l { padding: 10px; }
+.xl { padding: 11px; }
+.xxl { padding: 12px; }
+
+.default {
+  background-color: var(--button-color-lt-default);
+}
+
+.primary {
+  background-color: var(--button-color-lt-primary);
+}
+
+.secondary {
+  background-color: var(--button-color-lt-secondary);
+}
+
+.danger {
+  background-color: var(--button-color-lt-danger);
+}
+
+.info {
+  background-color: var(--button-color-lt-info);
+}
