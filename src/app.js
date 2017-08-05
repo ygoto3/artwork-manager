@@ -13,16 +13,18 @@ import Renderer from './server/Renderer.js';
 
 const logger = debug('app');
 const app = express();
+const port = environment.PORT + environment.NODE_APP_INSTANCE;
+
 new Api(app);
 new Renderer(app, path.resolve(__dirname, 'static'), path.resolve(__dirname, 'static/service-worker.js'), path.resolve(__dirname, '../uploads'));
 const server: Server = http.createServer(app);
 
 function onListening(): void {
-  logger(`Listening on ${environment.DEFAULT_PORT}`);
+  logger(`Listening on ${port}`);
   mongoose.connect(environment.MONGODB_URI, {
     useMongoClient: true,
   });
 }
 
-server.listen(environment.DEFAULT_PORT);
+server.listen(port);
 server.on('listening', onListening);

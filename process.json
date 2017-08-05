@@ -1,0 +1,10 @@
+{
+  "name": "artwork-manager",
+  "script": "build/app.js",
+  "watch": "build/",
+  "exec_mode": "fork",
+  "instances": 2,
+  "env": {
+    "NODE_DEBUG" : "http,net"
+  }
+}
