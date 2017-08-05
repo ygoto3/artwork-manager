@@ -6,16 +6,29 @@ A web service to manage artworks (in development)
 
 - Node.js v8.1.3~
 - MongoDB v3.4.6~
+- GNU Make v3.82~
+- gettext v0.19.8.1~
 
 ## Run
 
-```sh
-$ yarn build
-```
+Set environment variables:
+
+- `SSL_CERTIFICATE`
+  - ex: /etc/letsencrypt/live/example.com/fullchain.pem
+- `SSL_CERTIFICATE_KEY`
+  - ex: /etc/letsencrypt/live/example.com/privkey.pem 
+
+Optionally:
+
+- `PORT`
+  - A given port that the web application uses
+- `MONGODB_URI`
+  - default: `mongodb://localhost/mydb`
 
 Then
 
 ```sh
+$ yarn build
 $ yarn start
 ```
 

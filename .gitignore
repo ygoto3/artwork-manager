@@ -6,6 +6,7 @@ Thumbs.db
 npm-debug.log
 node_modules/
 build/
+nginx/nginx.conf
 uploads/
 coverage/
 backstop_data/bitmaps_test
