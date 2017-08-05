@@ -60,39 +60,37 @@ export default class Renderer {
   renderFullPage(body: string, preloadedState: Object): string {
     return `
       <!doctype html>
-      <html>
-        <head>
-          <title>Artwork Manager</title>
-          <meta name="viewport" content="width=device-width,initial-scale=1" />
-          <link rel="manifest" href="/static/manifest.json" />
-          <link rel="stylesheet" href="/static/app.css" />
-        </head>
-        <body>
-          <div id="root">${ body }</div>
-          <script>
-            window.addEventListener('load', () => {
-              if (
-                !('serviceWorker' in navigator) ||
-                !(
-                  window.location.protocol === 'https:' ||
-                  window.location.hostname === 'localhost' ||
-                  window.location.hostname === '[::1]' ||
-                  window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
-                )
-              ) return;
-              navigator.serviceWorker.register('/service-worker.js')
-                .then(registration => console.log('serviceWorker registered'))
-                .catch(err => console.log('serviceWorker failed to be registered', err));
-            });
-          </script>
-          <script>
-            // WARNING: See the following for security issues around embedding JSON in HTML:
-            // http://redux.js.org/docs/recipes/ServerRendering.html#security-considerations
-            window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
-          </script>
-          <script src="/static/client.js"></script>
-        </body>
-      </html>
+      <title>Artwork Manager ttt</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      <link rel="manifest" href="/static/manifest.json" />
+      <link rel="icon" sizes="192x192" href="/static/images/icons/192x192.png" />
+      <link rel="apple-touch-icon" href="/static/images/icons/180x180.png" />
+      <link rel="stylesheet" href="/static/app.css" />
+      <div id="root">${ body }</div>
+      <script>
+        window.addEventListener('load', () => {
+          if (
+            !('serviceWorker' in navigator) ||
+            !(
+              window.location.protocol === 'https:' ||
+              window.location.hostname === 'localhost' ||
+              window.location.hostname === '[::1]' ||
+              window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
+            )
+          ) return;
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => console.log('serviceWorker registered'))
+            .catch(err => console.log('serviceWorker failed to be registered', err));
+        });
+      </script>
+      <script>
+        // WARNING: See the following for security issues around embedding JSON in HTML:
+        // http://redux.js.org/docs/recipes/ServerRendering.html#security-considerations
+        window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
+      </script>
+      <script src="/static/client.js"></script>
     `;
   }
 
