@@ -39,7 +39,7 @@ http {
 
     server {
         listen       80;
-        server_name artwork-manager;
+        server_name  ${SERVER_NAME};
         rewrite ^ https://$server_name$request_uri? permanent;
     }
     
@@ -48,7 +48,7 @@ http {
         ssl_certificate     ${SSL_CERTIFICATE};
         ssl_certificate_key ${SSL_CERTIFICATE_KEY};
 
-        server_name  artwork-manager;
+        server_name         ${SERVER_NAME};
         proxy_redirect                          off;
         proxy_set_header Host                   $host;
         proxy_set_header X-Real-IP              $remote_addr;
