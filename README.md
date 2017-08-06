@@ -13,12 +13,16 @@ A web service to manage artworks (in development)
 
 Set environment variables:
 
+- `SERVER_NAME`
+  - Your application's domain
+  - ex: `example.com` 
 - `SSL_CERTIFICATE`
-  - ex: /etc/letsencrypt/live/example.com/fullchain.pem
+  - ex: `/etc/letsencrypt/live/example.com/fullchain.pem`
 - `SSL_CERTIFICATE_KEY`
-  - ex: /etc/letsencrypt/live/example.com/privkey.pem 
+  - ex: `/etc/letsencrypt/live/example.com/privkey.pem`
 - `API_ORIGIN`
   - The origin where your API server is located 
+  - ex: `https://example.com` 
 
 Optionally:
 
