@@ -10,7 +10,7 @@ import { renderRoutes } from 'react-router-config';
 import routes from '../routes';
 import configureStore from '../store';
 import sagas from '../sagas';
-import env from '../config/Environment';
+import env from '../config/environment';
 
 export default class Renderer {
   
