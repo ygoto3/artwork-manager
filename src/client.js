@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 
 import './utils/polyfills.js';
+import './client/config/environment';
 import routes from './routes';
 import configureStore from './store';
 import sagas from './sagas';

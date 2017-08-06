@@ -17,6 +17,8 @@ Set environment variables:
   - ex: /etc/letsencrypt/live/example.com/fullchain.pem
 - `SSL_CERTIFICATE_KEY`
   - ex: /etc/letsencrypt/live/example.com/privkey.pem 
+- `API_ORIGIN`
+  - The origin where your API server is located 
 
 Optionally:
 

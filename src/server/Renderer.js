@@ -10,6 +10,7 @@ import { renderRoutes } from 'react-router-config';
 import routes from '../routes';
 import configureStore from '../store';
 import sagas from '../sagas';
+import env from '../config/Environment';
 
 export default class Renderer {
   
@@ -84,11 +85,16 @@ export default class Renderer {
             .then(registration => console.log('serviceWorker registered'))
             .catch(err => console.log('serviceWorker failed to be registered', err));
         });
-      </script>
-      <script>
+
         // WARNING: See the following for security issues around embedding JSON in HTML:
         // http://redux.js.org/docs/recipes/ServerRendering.html#security-considerations
         window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
+
+        window.process = {
+          env: {
+            API_ORIGIN: "${env.get('API_ORIGIN')}"
+          }
+        };
       </script>
       <script src="/static/client.js"></script>
     `;

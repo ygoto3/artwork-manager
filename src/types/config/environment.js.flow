@@ -1,6 +1,7 @@
 // @flow
 
-declare type Environment = {
-  DEFAULT_PORT: number;
-  MONGODB_URI: string;
-};
+declare type EnvironmentKey =
+  'PORT' |
+  'MONGODB_URI' |
+  'NODE_APP_INSTANCE' |
+  'API_ORIGIN';
