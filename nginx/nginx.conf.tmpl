@@ -61,7 +61,7 @@ http {
         }
         location = /api/v1/artworks/images {
             client_max_body_size 5M;
-            proxy_pass http://artwork-manager/;
+            proxy_pass http://artwork-manager/api/v1/artworks/images;
         }
         error_page   500 502 503 504  /50x.html;
         location = /50x.html {  
