@@ -4,7 +4,7 @@ import { Tooltip } from './index';
 
 module.exports = stories => (
   stories
-  .addWithInfo(
+  .add(
     'normal',
     () => (
       <Tooltip label="Tooltip">

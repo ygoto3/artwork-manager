@@ -4,7 +4,7 @@ import { Card } from './index';
 
 module.exports = stories => (
   stories
-  .addWithInfo(
+  .add(
     'normal',
     () => (
       <Card>Card content</Card>

@@ -11,43 +11,43 @@ import {
 
 module.exports = stories => (
   stories
-  .addWithInfo(
+  .add(
     'size: xxs',
     () => (
       <Button xxs onClick={action('clicked')}>Button</Button>
     )
   )
-  .addWithInfo(
+  .add(
     'size: xs',
     () => (
       <Button xs onClick={action('clicked')}>Button</Button>
     )
   )
-  .addWithInfo(
+  .add(
     'size: s',
     () => (
       <Button s onClick={action('clicked')}>Button</Button>
     )
   )
-  .addWithInfo(
+  .add(
     'size: m',
     () => (
       <Button m onClick={action('clicked')}>Button</Button>
     )
   )
-  .addWithInfo(
+  .add(
     'size: l',
     () => (
       <Button l onClick={action('clicked')}>Button</Button>
     )
   )
-  .addWithInfo(
+  .add(
     'size: xl',
     () => (
       <Button xl onClick={action('clicked')}>Button</Button>
     )
   )
-  .addWithInfo(
+  .add(
     'size: xxl',
     () => (
       <Button xxl onClick={action('clicked')}>Button</Button>

@@ -10,7 +10,7 @@ const items = [
 
 module.exports = stories => (
   stories
-  .addWithInfo('normal', () => (
+  .add('normal', () => (
     <List>
       {items.map((i, idx) => (
         <ListItem key={idx}>

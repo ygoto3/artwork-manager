@@ -12,7 +12,7 @@ const actions = new Array(2).fill(null)
 
 module.exports = stories => (
   stories
-  .addWithInfo(
+  .add(
     'open',
     () => {
       return (
@@ -24,7 +24,7 @@ module.exports = stories => (
       </Dialog>
     ); }
   )
-  .addWithInfo(
+  .add(
     'close',
     () => (
       <Dialog onClose={action('dialog closed')}>
