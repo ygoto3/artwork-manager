@@ -8,10 +8,12 @@ node_modules/
 build/
 nginx/nginx.conf
 uploads/
+persistent-data/
 coverage/
 backstop_data/bitmaps_test
 backstop_data/html_report
 storybook-static/
+ansible/centos.retry
 
 # Intellij project files
 .idea

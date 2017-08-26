@@ -1,0 +1,12 @@
+version: '2'
+services:
+  artwork-mongo:
+    image: mvertes/alpine-mongo:3.4.7-0
+    ports:
+      - "27017:27017"
+      - "28017:28017"
+    volumes:
+      - ./persistent-data/mongodb:/data/db 
+    tty: true
+    stdin_open: true
+    privileged: true

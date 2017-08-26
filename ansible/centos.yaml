@@ -1,0 +1,44 @@
+---
+- hosts: centos
+  user: root
+  become: yes
+  vars:
+    yum_packages:
+      - { name: epel-release }
+      - { name: git }
+      - { name: python-pip }
+      - { name: nodejs }
+    python_packages:
+      - { name: docker-compose }
+  tasks:
+    # Setup Node.js Packages for Enterprise Linux 7 - x86_64 
+    - name: Node.js Packages for Enterprise Linux 7 - x86_64
+      shell: "curl --silent --location https://rpm.nodesource.com/setup_8.x | bash -"
+      args:
+        creates: /usr/bin/node 
+
+    # yum
+    - name: Install yum packages
+      yum: name={{ item.name }} state=installed
+      with_items: '{{ yum_packages }}'
+
+    # Upgrade all yum packages
+    - name: Upgrade all packages
+      yum: name='*' state=latest
+
+    # Install Docker
+    - name: Install Docker
+      shell: "curl -fsSL https://get.docker.com/ | sh"
+      args:
+        creates: /usr/bin/docker
+
+    # Install Node.js
+    - name: Install Node.js
+      shell: "curl --silent --location https://rpm.nodesource.com/setup_8.x | bash -"
+      args:
+        creates: /usr/bin/docker
+
+    # Install Python packages
+    - name: Install Python packages
+      pip: name={{ item.name }}
+      with_items: '{{ python_packages }}'

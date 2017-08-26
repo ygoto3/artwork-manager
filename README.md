@@ -5,9 +5,11 @@ A web service to manage artworks (in development)
 ## Requirement
 
 - Node.js v8.1.3~
-- MongoDB v3.4.6~
 - GNU Make v3.82~
 - gettext v0.19.8.1~
+- Ansible 2.3.1.0
+- Docker v17.06.1-ce
+- docker-compose v1.14.0
 
 ## Run
 
@@ -34,6 +36,7 @@ Optionally:
 Then
 
 ```sh
+$ docker-compose up -d
 $ yarn build
 $ yarn start
 ```

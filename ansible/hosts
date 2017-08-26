@@ -1,0 +1,2 @@
+[centos]
+127.0.0.1 ansible_port=2022
